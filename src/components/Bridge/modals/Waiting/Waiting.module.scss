@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+@import '../../../../variables.module.scss';
+
+.modal {
+  font-family: 'Nunito' !important ;
+  position: absolute;
+  width: 330px;
+  background: white;
+  max-width: 100%;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .title {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #2e0b5a;
+  }
+
+  .description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #a895bf;
+    display: inline-block;
+    word-break: break-all;
+    margin-top: 10px;
+  }
+
+  .btn {
+    color: white;
+    background-color: $primary-color;
+    height: 40px;
+    border-radius: 0;
+    padding: 13px 10px;
+    display: flex;
+    align-items: center;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+
+    text-transform: uppercase;
+    border-bottom: 2px solid $dark-primary-color !important;
+    white-space: nowrap;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $dark-primary-color;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
+}

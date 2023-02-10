@@ -1,0 +1,83 @@
+@import '../../variables.module.scss';
+
+.receiveInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  p {
+    font-size: 10px;
+    line-height: 12px;
+    font-variant: tabular-nums;
+  }
+  img {
+    width: 20px;
+  }
+  span {
+    font-size: 9px;
+    line-height: 11px;
+    color: #ac8300;
+    background: #ffde75;
+    padding: 5px;
+    margin-left: 5px;
+  }
+}
+
+.connectBtnMajor {
+  font-family: 'Nunito', sans-serif;
+  border-radius: 0 !important;
+  color: white !important;
+  background-color: $primary-color !important;
+  width: 100%;
+  height: 60px;
+  max-height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 4px solid $dark-primary-color !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  img {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+  }
+  &:hover {
+    background-color: $dark-primary-color !important;
+  }
+  @media screen and (max-width: 400px) {
+    height: 45px;
+  }
+}
+
+.availableBalance,
+.underFaqContent {
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+
+.link {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+  color: $dark-primary-color;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.feesToBePaid {
+  margin-left: 20px;
+}
+
+.hashInput {
+  font-size: 15px !important;
+}

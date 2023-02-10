@@ -1,0 +1,67 @@
+@import '../../../variables.module.scss';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .innercontainer {
+    flex: 1;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    .left {
+      flex: 1;
+      h4 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: $primary-color;
+        a {
+          color: $primary-color;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+      a {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration: none;
+      }
+
+      .copyright {
+        color: white;
+      }
+    }
+    .right {
+      display: flex;
+      gap: 10px;
+      a {
+        .link {
+          height: 25px;
+          width: 25px;
+          border: 2px solid $dark-primary-color;
+          display: grid;
+          place-items: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}

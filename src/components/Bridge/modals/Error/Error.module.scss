@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+@import '../../../../variables.module.scss';
+
+.paper {
+  font-family: 'Nunito' !important ;
+  position: absolute;
+  width: 100%;
+  max-width: 530px !important;
+  background: white;
+  max-width: 100%;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: justify;
+    color: #a895bf;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+.contentContainer {
+  margin: 50px 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.modalTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2e0b5a;
+}
+
+.btn {
+  font-family: 'Nunito', sans-serif !important ;
+  margin-top: 20px !important;
+  color: white !important;
+  background-color: $primary-color !important;
+  width: 386px;
+  max-width: 90%;
+  height: 52px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  border-bottom: 4px solid $dark-primary-color !important;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}

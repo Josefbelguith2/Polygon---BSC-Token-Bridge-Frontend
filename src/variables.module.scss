@@ -1,0 +1,26 @@
+$primary-color: rgb(186, 177, 228);
+$dark-primary-color:rgb(186, 177, 228);
+
+
+$primary: 'Nunito, sans-serif',;
+$bungeeRegular: 'Bungee-Regular';
+$sairaRegular: 'Saira-Regular';
+$sairaBold: 'Saira-Bold';
+$sairaSemiBold: 'Saira-SemiBold';
+$poppinsBoldItalic: 'Poppins-BoldItalic';
+$poppinsSemiBoldItalic: 'Poppins-SemiBoldItalic';
+$poppinsRegular: 'Poppins-Regular';
+$poppinsExtraLightItalic: 'Poppins-ExtraLightItalic';
+$poppinsItalic: 'Poppins-Italic';
+$sourceSansProSemiBold: 'SourceSansPro-SemiBold';
+$sourceSansProRegular: 'SourceSansPro-Regular';
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+:export {
+  primaryColor: $primary-color;
+  darkPrimaryColor: $dark-primary-color;
+}

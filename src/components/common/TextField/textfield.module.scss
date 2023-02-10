@@ -1,0 +1,53 @@
+@import '../../../variables.module.scss';
+
+.container {
+  padding: 13px 22px;
+  background: #eff3f5;
+  border: 1px solid #dce7fb;
+
+  @media screen and (max-width: 600px) {
+    padding: 10px 16px;
+  }
+
+  @media screen and (max-width: 475px) {
+    padding: 10px 16px;
+    padding-bottom: 0px;
+  }
+
+  .label {
+    padding-top: 0;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    @media screen and (max-width: 475px) {
+      font-size: 7px;
+      line-height: 7px;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 6px;
+    border: none;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2f3030;
+    &:focus {
+      outline: none;
+    }
+    @media screen and (max-width: 600px) {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 37px;
+    }
+    @media screen and (max-width: 475px) {
+      font-size: 18px;
+      line-height: 37px;
+      margin-top: 0px;
+    }
+  }
+}
